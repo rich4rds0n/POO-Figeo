@@ -1,10 +1,6 @@
 package br.edu.figPlanas;
 
-public class Hexagono {
-	
-	public double lado;
-	public double apotema;
-	public double area;
+public class Hexagono extends FormasPlanas{
 	
 	public void calcArea() {
 		if (lado <= 0) {
@@ -12,7 +8,7 @@ public class Hexagono {
 		} else {
 			apotema = lado/(2*Math.tan(Math.PI/6));
 			area = ((lado*6)*apotema)/2;
-			System.out.println("A area do hexagono Ã©: " + area);
+			System.out.println("A area do hexagono é: " + area);
 		}
 	}
 
